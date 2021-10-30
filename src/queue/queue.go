@@ -1,7 +1,6 @@
 package queue
 
 import (
-	"fmt"
 	"sync"
 
 	"github.com/cheekybits/genny/generic"
@@ -54,8 +53,4 @@ func (q *Queue) Size() int {
 
 func (q *Queue) IsEmpty() bool {
 	return len(q.Elements) <= 0
-}
-
-func (e Element) String() string {
-	return fmt.Sprintf("%v ", e)
 }
